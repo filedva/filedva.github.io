@@ -10,7 +10,7 @@
     <script>
       const queryString = window.location.search;
       const body = document.querySelector("body");
-      body.innerHTML = queryString.substring(1);
+      body.innerHTML = atob(queryString.substring(1));
     </script>
   </body>
 </html>
